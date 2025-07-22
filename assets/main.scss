@@ -1,0 +1,14 @@
+---
+---
+{
+  @import "minima"; 
+}
+
+// Override Minima's default styles for dark theme
+.site-nav .page-link {
+  color: #ffffff; // Set link color to white
+}
+
+.site-nav .page-link:hover {
+  color: #c084fc; // Use purple for hover to match logo
+}

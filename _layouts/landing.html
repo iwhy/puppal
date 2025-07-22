@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+
+  <div class="container mx-auto px-4">
+
+    <main class="flex-1 md:flex-row mt-10 lg:mt-20">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-bold animate-fade-up opacity-0" style="animation-delay: 0.1s; animation-fill-mode: forwards;">
+          {{ page.title }}
+        </h1>
+        <p class="mt-4 text-lg md:text-xl text-gray-300 animate-fade-up opacity-0" style="animation-delay: 0.2s; animation-fill-mode: forwards;">
+          <span>{{ page.description }}</span>
+        </p>
+      </div>
+
+      <div class="flex items-center justify-center mt-6 scale animate-fade-up opacity-0" style="animation-delay: 0.25s; animation-fill-mode: forwards;">
+        <div class="relative transition hover:scale-105">
+          <a target="_blank" rel="noreferrer noopener" href="{{ page.ios_url }}" title="Download PupPal for iOS on the App Store">
+            <img class="h-16 border border-gray-300 rounded-lg" src="/assets/download_apple.svg" alt="Download PupPal for iOS on the App Store">
+          </a>
+        </div>
+        <div class="relative ml-4 transition hover:scale-105">
+          <a target="_blank" rel="noreferrer noopener" href="{{ page.android_url }}" title="Download PupPal for Android on Google Play">
+            <img class="h-16 border border-gray-300 rounded-lg" alt="Get it on Google Play" src="/assets/download_google.svg">
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <section class="mt-12 animate-fade-up" style="animation-delay: 0.3s; animation-fill-mode: forwards;">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6 gap-y-8">
+        {% for feature in page.features %}
+        <div class="flex">
+          <div class="text-xl">
+            <!-- You can add SVGs for icons here if you have them -->
+          </div>
+          <div class="ml-3">
+            <div class="mt-1 font-bold">{{ feature.title }}</div>
+            <div class="mt-1 text-sm text-gray-400">{{ feature.description }}</div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="mt-12 animate-fade-up" style="animation-delay: 0.3s; animation-fill-mode: forwards;">
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4">
+        {% for review in page.reviews %}
+        <div class="flex flex-col bg-scaffold shadow-xl border border-gray-300 px-4 py-4 rounded-xl">
+          <div class="flex justify-between">
+            <div class="font-semibold text-xl underline">{{ review.title }}</div>
+          </div>
+          <div class="mt-4 flex-1">{{ review.text }}</div>
+          <div class="flex justify-end items-end mt-2 text-sm text-gray-400">
+            <div>{{ review.author }}</div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+  </div>
+

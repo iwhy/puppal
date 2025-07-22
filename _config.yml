@@ -1,0 +1,22 @@
+title: PupPal
+author: PupPal
+description: "A simple and beautiful habit tracker."
+baseurl: ""
+url: ""
+
+header_pages:
+  - index.md
+  - blog.html
+  - privacy.md
+  - tos.md
+  - contact.md
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+minima:
+  skin: dark
+
+

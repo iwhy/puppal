@@ -1,0 +1,17 @@
+ok---
+layout: default
+---
+
+<div class="container mx-auto px-4">
+  <article class="prose lg:prose-xl mt-10 lg:mt-20 text-gray-200">
+    <header>
+      <h1 class="post-title">{{ page.title | escape }}</h1>
+      <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</p>
+    </header>
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+  </article>
+</div>
