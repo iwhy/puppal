@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.cubeer.pet_time",
+      "sha256_cert_fingerprints": [
+        "A8:20:39:64:10:D7:A2:2E:45:26:42:95:5A:FB:0F:2D:29:7E:05:22:9C:43:93:AB:74:65:30:41:22:62:95:4B"
+      ]
+    }
+  }
+]
